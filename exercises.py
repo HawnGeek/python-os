@@ -1,10 +1,33 @@
 #1. Open the filenames.txt file with read-only access with the open() function
 
+file_obj = open('filenames.txt','r')
+
+print(file_obj)
+
+file_obj.close()
+
+
 #2. Print the name of the file and if it is open or closed using the .name and .closed properties
+
+exer2 = open('filenames.txt','r')
+print("What is the file Name?: ", exer2.name)
+print("Is the file closed?: ", exer2.closed)
+
+exer2.close()
+print("Is the file closed?: ", exer2.closed)
 
 #3. Use a for loop to read all lines of filenames.txt into a list variable
 
+exer3 = open('filenames.txt','r')
+
+for line in exer3:
+    print(line)
+ 
+
 #4. Print out all the lines from the file from your variable
+#exer4 = open('filenames.txt','r')
+
+#for 
 
 #5. Close the filenames.txt file and print if the file is open or closed
 
@@ -21,6 +44,7 @@
 #11. Close the secrets.txt file again using the close() function
 
 #12. Rename the secrets.txt and make it a "hidden" file named .supersecret.txt using the os.rename() function
+
 
 #13. See if you can see the file in your file explorer
 

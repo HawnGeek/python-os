@@ -50,7 +50,17 @@ for line in exer3:
 
 #14. Create a list variable named file_names that contains a list of filenames
 
+#file_names[one.tx]
+
 #15. Use the writelines() function to append the filenames to the filenames.txt file
+
+file_names = ('\none.txt','\ntwo.txt','\nthree.txt') 
+
+exer_15 = open('filenames.txt','a')
+
+exer_15.writelines (file_names)
+
+
 
 #16. Delete the initial secrets.txt file now that you have a super secret hidden version
 
